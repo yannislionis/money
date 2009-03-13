@@ -1,0 +1,22 @@
+<h1>Listing transactions</h1>
+
+<h2>Balance: £<%= @total %> owed to Eastmad</h2>
+
+<table>
+  <tr>
+	<td>Amount</td>
+  </tr>
+
+<% for transaction in @transactions %>
+  <tr>
+	<td>£<%= transaction.amount %></td>
+	<td><%= link_to 'Show', transaction %></td>
+	<td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
+	<td><%= link_to 'Destroy', transaction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New transaction', new_transaction_path %>

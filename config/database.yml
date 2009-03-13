@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: money
+  username: postgres
+  password: web21c
+  host: localhost
