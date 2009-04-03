@@ -2,13 +2,9 @@ class TransactionsController < ApplicationController
   # GET /transactions
   # GET /transactions.xml
   def index
+    
     @transactions = Transaction.find(:all)
-    
-    @total = 0
-    
-    @transactions.each do |t|
-	    @total = @total + t.amount
-    end
+    @total = balance
 
     respond_to do |format|
       format.html # index.html.erb
@@ -52,6 +48,7 @@ class TransactionsController < ApplicationController
       if @transaction.save
         flash[:notice] = 'Transaction was successfully created.'
 	@transactions = Transaction.find(:all)
+        @total = balance
         format.html { render :action => 'index'}
         format.xml  { render :xml => @transaction, :status => :created, :location => @transaction }
       else
@@ -89,4 +86,15 @@ class TransactionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def balance
+
+	transactions = Transaction.find(:all)
+	total = 0
+	transactions.each do |t|
+	    total = total + t.amount
+    end
+    total
+  end
+  
 end

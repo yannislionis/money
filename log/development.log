@@ -1673,3 +1673,225 @@ Processing TransactionsController#index (for 10.237.33.57 at 2009-03-13 12:12:13
 Rendering template within layouts/transactions
 Rendering transactions/index
 Completed in 0.89100 (1 reqs/sec) | Rendering: 0.17200 (19%) | DB: 0.21900 (24%) | 200 OK [http://btg219768.iuser.iroot.adidom.com/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-03-13 17:57:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMGQ3MTIyOGRmZjQ0NTQ3Mjg5OTQ2Y2M2OTczOTU0
+MzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--0b9bb50d2a1b046dc4bf6213837783b0ccb70538
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;35;1mTransaction Load (0.016000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.01600 (34%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-03 19:26:01) [GET]
+  Session ID: 11212da4da9908aeb6b174d3e7980d3a
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTransaction Load (0.453000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 1.34400 (0 reqs/sec) | Rendering: 0.07800 (5%) | DB: 0.45300 (33%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-03 19:27:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.01500 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#new (for 127.0.0.1 at 2009-04-03 19:27:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
+  Parameters: {"action"=>"new", "controller"=>"transactions"}
+Rendering template within layouts/transactions
+Rendering transactions/new
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.03100 (39%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions/new]
+
+
+Processing TransactionsController#create (for 127.0.0.1 at 2009-04-03 19:27:58) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
+  Parameters: {"commit"=>"Create", "transaction"=>{"amount"=>"6"}, "authenticity_token"=>"413f5c0343ef885630e1e7ea65f1a328c6e4e3c4", "action"=>"create", "controller"=>"transactions"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mTransaction Create (0.078000)[0m   [0mINSERT INTO "transactions" ("updated_at", "amount", "created_at") VALUES('2009-04-03 18:27:58.674000', 6.0, '2009-04-03 18:27:58.674000')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT currval('transactions_id_seq')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+  [4;36;1mTransaction Load (0.016000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/create
+
+
+ActionView::MissingTemplate (Missing template transactions/create.html.erb in view path D:/checkout/money/app/views):
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:85:in `raise_missing_template_exception'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:78:in `set_extension_and_file_name'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:15:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:865:in `render_with_no_layout'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:880:in `render_with_no_layout'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    /app/controllers/transactions_controller.rb:13:in `index'
+    /app/controllers/transactions_controller.rb:54:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:106:in `call'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/mime_responds.rb:106:in `respond_to'
+    /app/controllers/transactions_controller.rb:51:in `create'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:281
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    C:/ruby/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-03 19:31:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIipUcmFuc2FjdGlvbiB3YXMgc3VjY2Vzc2Z1bGx5IGNy
+ZWF0ZWQuBjoKQHVzZWR7BjsHRg==--c965db2176fd639b3af057d86f627212e7492dd5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#new (for 127.0.0.1 at 2009-04-03 19:31:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIipUcmFuc2FjdGlvbiB3YXMgc3VjY2Vzc2Z1bGx5IGNy
+ZWF0ZWQuBjoKQHVzZWR7BjsHVA==--d84b02e02476dacfafaf0545c137cfba87618afc
+  Parameters: {"action"=>"new", "controller"=>"transactions"}
+Rendering template within layouts/transactions
+Rendering transactions/new
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions/new]
+
+
+Processing TransactionsController#create (for 127.0.0.1 at 2009-04-03 19:31:49) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
+  Parameters: {"commit"=>"Create", "transaction"=>{"amount"=>"4"}, "authenticity_token"=>"413f5c0343ef885630e1e7ea65f1a328c6e4e3c4", "action"=>"create", "controller"=>"transactions"}
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mTransaction Create (0.000000)[0m   [0;1mINSERT INTO "transactions" ("updated_at", "amount", "created_at") VALUES('2009-04-03 18:31:49.331000', 4.0, '2009-04-03 18:31:49.331000')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT currval('transactions_id_seq')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-03 19:31:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIipUcmFuc2FjdGlvbiB3YXMgc3VjY2Vzc2Z1bGx5IGNy
+ZWF0ZWQuBjoKQHVzZWR7BjsHRg==--c965db2176fd639b3af057d86f627212e7492dd5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#new (for 127.0.0.1 at 2009-04-03 19:31:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIipUcmFuc2FjdGlvbiB3YXMgc3VjY2Vzc2Z1bGx5IGNy
+ZWF0ZWQuBjoKQHVzZWR7BjsHVA==--d84b02e02476dacfafaf0545c137cfba87618afc
+  Parameters: {"action"=>"new", "controller"=>"transactions"}
+Rendering template within layouts/transactions
+Rendering transactions/new
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions/new]
+
+
+Processing TransactionsController#create (for 127.0.0.1 at 2009-04-03 19:32:03) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWY1Y2IxYzk3NmJhYTE5OTZiMjczYjRmYWI1OGRk
+NzEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
+  Parameters: {"commit"=>"Create", "transaction"=>{"amount"=>"-2.3"}, "authenticity_token"=>"413f5c0343ef885630e1e7ea65f1a328c6e4e3c4", "action"=>"create", "controller"=>"transactions"}
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mTransaction Create (0.000000)[0m   [0;1mINSERT INTO "transactions" ("updated_at", "amount", "created_at") VALUES('2009-04-03 18:32:03.938000', -2.3, '2009-04-03 18:32:03.938000')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT currval('transactions_id_seq')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
