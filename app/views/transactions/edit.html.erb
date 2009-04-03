@@ -2,7 +2,10 @@
 
 <% form_for(@transaction) do |f| %>
   <%= f.error_messages %>
-	Amount: <%= f.text_field :amount, :label => 'Username'%>
+
+	Amount (£): <%= f.text_field :amount, :label => 'Amount'%>
+	<br/>
+	Description: <%= f.text_field :description, :label => 'Description'%>
   <p>
     <%= f.submit "Update" %>
   </p>

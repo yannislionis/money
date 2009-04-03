@@ -5,11 +5,16 @@
 <table>
   <tr>
 	<td>Amount</td>
+	<td>Description</td>
+	<td>Created</td>
   </tr>
 
 <% for transaction in @transactions %>
   <tr>
 	<td>£<%= transaction.amount %></td>
+	<td><%= transaction.description %></td>
+	<td><%= transaction.created_at.strftime("%d/%m/%Y") %></td>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 	<td><%= link_to 'Show', transaction %></td>
 	<td><%= link_to 'Edit', edit_transaction_path(transaction) %></td>
 	<td><%= link_to 'Destroy', transaction, :confirm => 'Are you sure?', :method => :delete %></td>

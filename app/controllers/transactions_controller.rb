@@ -3,7 +3,7 @@ class TransactionsController < ApplicationController
   # GET /transactions.xml
   def index
     
-    @transactions = Transaction.find(:all)
+    @transactions = Transaction.find(:all, :order => 'created_at')
     @total = balance
 
     respond_to do |format|
