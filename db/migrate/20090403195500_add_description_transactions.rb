@@ -7,3 +7,4 @@ class AddDescriptionTransactions < ActiveRecord::Migration
     remove_column  :transactions, :description
   end
 end
+
