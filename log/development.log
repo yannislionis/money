@@ -2874,3 +2874,74 @@ c2h7AAY6CkB1c2VkewA=--b774808a60cec6af7e55ff89a84f05e43492215d
 Rendering template within layouts/transactions
 Rendering transactions/index
 Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-07 18:08:02) [GET]
+  Session ID: 095d35c1bc5d1ea80bf5fc4addd30153
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;36;1mSQL (0.016000)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mTransaction Load (0.312000)[0m   [0;1mSELECT * FROM "transactions" ORDER BY created_at[0m
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 1.14100 (0 reqs/sec) | Rendering: 0.43800 (38%) | DB: 0.32800 (28%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-07 18:08:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzYzZjY2YTQ1OThiNDM4M2Q3YjIxMmIwMGI0YTgz
+NTEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a5b15ad4028205bd4e5ae48860a2c6d2169911f5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;36;1mTransaction Load (0.000000)[0m   [0;1mSELECT * FROM "transactions" ORDER BY created_at[0m
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.06300 (15 reqs/sec) | Rendering: 0.01600 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-07 18:08:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzYzZjY2YTQ1OThiNDM4M2Q3YjIxMmIwMGI0YTgz
+NTEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a5b15ad4028205bd4e5ae48860a2c6d2169911f5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;36;1mTransaction Load (0.000000)[0m   [0;1mSELECT * FROM "transactions" ORDER BY created_at[0m
+  [4;35;1mTransaction Load (0.015000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.01600 (34%) | DB: 0.01500 (31%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-07 18:08:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzYzZjY2YTQ1OThiNDM4M2Q3YjIxMmIwMGI0YTgz
+NTEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a5b15ad4028205bd4e5ae48860a2c6d2169911f5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;36;1mTransaction Load (0.000000)[0m   [0;1mSELECT * FROM "transactions" ORDER BY created_at[0m
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.03100 (32 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]
+
+
+Processing TransactionsController#show (for 127.0.0.1 at 2009-04-07 18:09:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzYzZjY2YTQ1OThiNDM4M2Q3YjIxMmIwMGI0YTgz
+NTEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a5b15ad4028205bd4e5ae48860a2c6d2169911f5
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"transactions"}
+  [4;36;1mTransaction Load (0.000000)[0m   [0;1mSELECT * FROM "transactions" WHERE ("transactions"."id" = 3) [0m
+Rendering template within layouts/transactions
+Rendering transactions/show
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01500 (100%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions/3]
+
+
+Processing TransactionsController#index (for 127.0.0.1 at 2009-04-07 18:09:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzYzZjY2YTQ1OThiNDM4M2Q3YjIxMmIwMGI0YTgz
+NTEiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a5b15ad4028205bd4e5ae48860a2c6d2169911f5
+  Parameters: {"action"=>"index", "controller"=>"transactions"}
+  [4;35;1mTransaction Load (0.000000)[0m   [0mSELECT * FROM "transactions" ORDER BY created_at[0m
+  [4;36;1mTransaction Load (0.000000)[0m   [0;1mSELECT * FROM "transactions" [0m
+Rendering template within layouts/transactions
+Rendering transactions/index
+Completed in 0.04700 (21 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/transactions]

@@ -1,6 +1,6 @@
 <h1>Listing transactions</h1>
 
-<h2>Balance: £<%= @total %> owed to Eastmad</h2>
+<h2>Balance: £<%= '%.2f' % @total %> owed to Eastmad</h2>
 
 <table>
   <tr>
@@ -11,7 +11,7 @@
 
 <% for transaction in @transactions %>
   <tr>
-	<td>£<%= transaction.amount %></td>
+	<td>£<%= '%.2f' % transaction.amount %></td>
 	<td><%= transaction.description %></td>
 	<td><%= transaction.created_at.strftime("%d/%m/%Y") %></td>
 	<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>

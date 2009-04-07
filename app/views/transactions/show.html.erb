@@ -1,4 +1,4 @@
-Amount: £<%= @transaction.amount %>
+Amount: £<%= '%.2f' % @transaction.amount %>
 <br/>
 Description: <%= @transaction.description %>
 <br/><br/>
